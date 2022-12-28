@@ -1,6 +1,5 @@
 target/
 .idea/
 .bsp/
-/src/test/resources/
 *.class
 *.log

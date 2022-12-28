@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="ASCII"?>
+<kdm:Segment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:action="http://www.opencanarias.com/oc2/kdm/action" xmlns:code="http://www.opencanarias.com/oc2/kdm/code" xmlns:data="http://www.opencanarias.com/oc2/kdm/data" xmlns:kdm="http://www.opencanarias.com/oc2/kdm/kdm" xmlns:source="http://www.opencanarias.com/oc2/kdm/source" xmlns:ui="http://www.opencanarias.com/oc2/kdm/ui">
+  <extension name="natural2Kdm">
+    <stereotype name="usingReference" type="unresolved"/>
+    <stereotype name="data" type="local"/>
+    <stereotype name="data" type="independent"/>
+    <stereotype name="identification" type="unknown definition"/>
+    <stereotype name="identification" type="undefined"/>
+    <stereotype name="invoke" type="unresolved"/>
+  </extension>
+  <model xsi:type="source:InventoryModel">
+    <inventoryElement xsi:type="source:InventoryElement" name="PBPGGEN1"/>
+    <inventoryElement xsi:type="source:InventoryElement" name="ECNPPF40"/>
+    <inventoryElement xsi:type="source:InventoryElement" name="PBPAGEO1"/>
+    <inventoryElement xsi:type="source:InventoryElement" name="PHNASIPA"/>
+    <inventoryElement xsi:type="source:InventoryElement" name="CTVL0013"/>
+    <inventoryElement xsi:type="source:InventoryElement" name="LOHSREPL"/>
+    <inventoryElement xsi:type="source:InventoryElement" name="PBPAAIV0"/>
+    <inventoryElement xsi:type="source:InventoryElement" name="PBPACAB1"/>
+    <inventoryElement xsi:type="source:InventoryElement" name="PBPNTER0"/>
+  </model>
+  <model xsi:type="code:CodeModel" name="main">
+    <codeElement xsi:type="code:CompilationUnit">
+      <codeRelation xsi:type="code:Imports" stereotype="//@extension.0/@stereotype.0">
+        <attribute tag="reference" value="PBPGGEN1"/>
+      </codeRelation>
+      <codeRelation xsi:type="code:Imports" stereotype="//@extension.0/@stereotype.0">
+        <attribute tag="reference" value="ECNPPF40"/>
+      </codeRelation>
+      <codeRelation xsi:type="code:Imports" stereotype="//@extension.0/@stereotype.0">
+        <attribute tag="reference" value="PBPAGEO1"/>
+      </codeRelation>
+      <codeRelation xsi:type="code:Imports" stereotype="//@extension.0/@stereotype.0">
+        <attribute tag="reference" value="PHNASIPA"/>
+      </codeRelation>
+      <codeRelation xsi:type="code:Imports" stereotype="//@extension.0/@stereotype.0">
+        <attribute tag="reference" value="CTVL0013"/>
+      </codeRelation>
+      <codeRelation xsi:type="code:Imports" stereotype="//@extension.0/@stereotype.0">
+        <attribute tag="reference" value="LOHSREPL"/>
+      </codeRelation>
+      <codeRelation xsi:type="code:Imports" stereotype="//@extension.0/@stereotype.0">
+        <attribute tag="reference" value="PBPAAIV0"/>
+      </codeRelation>
+      <codeRelation xsi:type="code:Imports" stereotype="//@extension.0/@stereotype.0">
+        <attribute tag="reference" value="PBPACAB1"/>
+      </codeRelation>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="LOPRSISU-VIEW" type="//@model.1/@codeElement.0/@codeElement.0/@codeElement.0" ext="VIEW" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.3/@dataElement.0" from="//@model.1/@codeElement.0/@codeElement.0"/>
+        <codeElement xsi:type="code:RecordType" name="LOPRSISU-VIEW">
+          <itemUnit name="PSIK"/>
+          <itemUnit name="PSINDIPRAC" size="3">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+          <itemUnit name="PSINDIPRAC" type="//@model.1/@codeElement.0/@codeElement.0/@codeElement.0/@itemUnit.2/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.0/@codeElement.0/@itemUnit.1" from="//@model.1/@codeElement.0/@codeElement.0/@codeElement.0/@itemUnit.2"/>
+            <codeElement xsi:type="code:RecordType" name="PSINDIPRAC">
+              <itemUnit name="EGECAC-PSI" size="1">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+              <itemUnit name="PRVCAC-PSI" size="2">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+          <itemUnit name="PFIKTI-PSI"/>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="AOPEFISU-VIEW" type="//@model.1/@codeElement.0/@codeElement.1/@codeElement.0" ext="VIEW" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.3/@dataElement.1" from="//@model.1/@codeElement.0/@codeElement.1"/>
+        <codeElement xsi:type="code:RecordType" name="AOPEFISU-VIEW">
+          <itemUnit name="PFIK"/>
+          <itemUnit name="PFIAAP1"/>
+          <itemUnit name="PFIAAP2"/>
+          <itemUnit name="PFIANOM"/>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="SILCON-A1" size="2" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="SILCON-A2" size="9" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="SILCON-B" size="50" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="SILCON-E" size="8" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="MAPA-PHNMALIA" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0" kind="unknown">
+        <codeElement xsi:type="code:RecordType" name="MAPA-PHNMALIA">
+          <itemUnit name="#PROGRAMA" size="8">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#LIT-CAB" size="25">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#EXPEDIENTE" size="21">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#EXPEDIENTE" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.3/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.2" from="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.3"/>
+            <codeElement xsi:type="code:RecordType" name="#EXPEDIENTE">
+              <itemUnit name="TEXP" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="PEXP" size="2">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="AEXP" size="4">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="CEXP" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="NEXP" size="9">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="DUEXP" size="2">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="DEEXP" size="2">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+          <itemUnit name="#EXPEDIENTE" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.4/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.2" from="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.4"/>
+            <codeElement xsi:type="code:RecordType" name="#EXPEDIENTE">
+              <itemUnit name="#EXPEDIENTE-N" size="21">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+          <itemUnit name="#IPF" size="15">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#IPF" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.5" from="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6"/>
+            <codeElement xsi:type="code:RecordType" name="#IPF">
+              <itemUnit name="#TIPOIPF" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="#NUMIPF" size="10">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="#NUMIPF" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.2/@codeElement.0" ext="REDEFINITION">
+                <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.1" from="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.2"/>
+                <codeElement xsi:type="code:RecordType" name="#NUMIPF">
+                  <itemUnit name="#NUMIPF-T" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.2/@codeElement.0/@itemUnit.0/@codeElement.0">
+                    <codeElement xsi:type="code:ArrayType" size="1">
+                      <attribute tag="dimension" value="10"/>
+                      <itemUnit size="1">
+                        <type href="lu/natural.kdm#//@codeElement.6"/>
+                      </itemUnit>
+                      <indexUnit>
+                        <type href="lu/natural.kdm#//@codeElement.4"/>
+                      </indexUnit>
+                    </codeElement>
+                  </itemUnit>
+                </codeElement>
+              </itemUnit>
+              <itemUnit name="#NUMIPF" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.3/@codeElement.0" ext="REDEFINITION">
+                <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.1" from="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.3"/>
+                <codeElement xsi:type="code:RecordType" name="#NUMIPF">
+                  <itemUnit name="#NUMIPF-N9" size="9">
+                    <type href="lu/natural.kdm#//@codeElement.2"/>
+                  </itemUnit>
+                  <itemUnit name="#NUMIPF-A1" size="1">
+                    <type href="lu/natural.kdm#//@codeElement.6"/>
+                  </itemUnit>
+                </codeElement>
+              </itemUnit>
+              <itemUnit name="#NUMIPF" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.4/@codeElement.0" ext="REDEFINITION">
+                <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.1" from="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.4"/>
+                <codeElement xsi:type="code:RecordType" name="#NUMIPF">
+                  <itemUnit name="#NUMIPF-A9" size="9">
+                    <type href="lu/natural.kdm#//@codeElement.6"/>
+                  </itemUnit>
+                  <itemUnit name="#NUMIPF-A1-2" size="1">
+                    <type href="lu/natural.kdm#//@codeElement.6"/>
+                  </itemUnit>
+                </codeElement>
+              </itemUnit>
+              <itemUnit name="#NUMIPF" type="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.5/@codeElement.0" ext="REDEFINITION">
+                <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.1" from="//@model.1/@codeElement.0/@codeElement.6/@codeElement.0/@itemUnit.6/@codeElement.0/@itemUnit.5"/>
+                <codeElement xsi:type="code:RecordType" name="#NUMIPF">
+                  <itemUnit name="FILLER" size="1">
+                    <type href="lu/natural.kdm#//@codeElement.6"/>
+                  </itemUnit>
+                  <itemUnit name="#NUMIPF-N9-2" size="9">
+                    <type href="lu/natural.kdm#//@codeElement.2"/>
+                  </itemUnit>
+                </codeElement>
+              </itemUnit>
+              <itemUnit name="#DUPIPF" size="2">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="#DESIPF" size="2">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="MAPA-PHNMALI1" type="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0" kind="unknown">
+        <codeElement xsi:type="code:RecordType" name="MAPA-PHNMALI1">
+          <itemUnit name="#IDENT-RECIBO" size="17">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#IDENT-RECIBO" type="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.0" from="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1"/>
+            <codeElement xsi:type="code:RecordType" name="#IDENT-RECIBO">
+              <itemUnit name="#A#O" size="4">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="#A#O" type="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.1/@codeElement.0" ext="REDEFINITION">
+                <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.0" from="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.1"/>
+                <codeElement xsi:type="code:RecordType" name="#A#O">
+                  <itemUnit name="#A#O-N" size="4">
+                    <type href="lu/natural.kdm#//@codeElement.2"/>
+                  </itemUnit>
+                </codeElement>
+              </itemUnit>
+              <itemUnit name="#RECIBO" size="13">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+              <itemUnit name="#RECIBO" type="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.3/@codeElement.0" ext="REDEFINITION">
+                <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.2" from="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.3"/>
+                <codeElement xsi:type="code:RecordType" name="#RECIBO">
+                  <itemUnit name="#ENT" size="1">
+                    <type href="lu/natural.kdm#//@codeElement.6"/>
+                  </itemUnit>
+                  <itemUnit name="#ENT" type="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.3/@codeElement.0/@itemUnit.1/@codeElement.0" ext="REDEFINITION">
+                    <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.3/@codeElement.0/@itemUnit.0" from="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.3/@codeElement.0/@itemUnit.1"/>
+                    <codeElement xsi:type="code:RecordType" name="#ENT">
+                      <itemUnit name="#ENT-N" size="1">
+                        <type href="lu/natural.kdm#//@codeElement.2"/>
+                      </itemUnit>
+                    </codeElement>
+                  </itemUnit>
+                  <itemUnit name="#PRV" size="2">
+                    <type href="lu/natural.kdm#//@codeElement.6"/>
+                  </itemUnit>
+                  <itemUnit name="#PRV" type="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.3/@codeElement.0/@itemUnit.3/@codeElement.0" ext="REDEFINITION">
+                    <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.3/@codeElement.0/@itemUnit.2" from="//@model.1/@codeElement.0/@codeElement.7/@codeElement.0/@itemUnit.1/@codeElement.0/@itemUnit.3/@codeElement.0/@itemUnit.3"/>
+                    <codeElement xsi:type="code:RecordType" name="#PRV">
+                      <itemUnit name="#PRV-N" size="2">
+                        <type href="lu/natural.kdm#//@codeElement.2"/>
+                      </itemUnit>
+                    </codeElement>
+                  </itemUnit>
+                  <itemUnit name="#NUM-RECIBO" size="10">
+                    <type href="lu/natural.kdm#//@codeElement.6"/>
+                  </itemUnit>
+                </codeElement>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="DNI-AUX" size="10" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="DNI-AUX" type="//@model.1/@codeElement.0/@codeElement.9/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.8" from="//@model.1/@codeElement.0/@codeElement.9"/>
+        <codeElement xsi:type="code:RecordType" name="DNI-AUX">
+          <itemUnit name="DNI-AUX-N2" size="2">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+          <itemUnit name="DNI-AUX-N" size="8">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="DNI-AUX" type="//@model.1/@codeElement.0/@codeElement.10/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.8" from="//@model.1/@codeElement.0/@codeElement.10"/>
+        <codeElement xsi:type="code:RecordType" name="DNI-AUX">
+          <itemUnit name="DNI-AUX-N10" size="10">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#ERROR" size="4" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.2"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="IND" size="2" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.2"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="FECHA-ALFA" size="8" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="FECHA-ALFA" type="//@model.1/@codeElement.0/@codeElement.14/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.13" from="//@model.1/@codeElement.0/@codeElement.14"/>
+        <codeElement xsi:type="code:RecordType" name="FECHA-ALFA">
+          <itemUnit name="ANNO-SISTEMA" size="4">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="ANNO-SISTEMA" type="//@model.1/@codeElement.0/@codeElement.14/@codeElement.0/@itemUnit.1/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.14/@codeElement.0/@itemUnit.0" from="//@model.1/@codeElement.0/@codeElement.14/@codeElement.0/@itemUnit.1"/>
+            <codeElement xsi:type="code:RecordType" name="ANNO-SISTEMA">
+              <itemUnit name="ANNO-SISTEMA-N" size="4">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+          <itemUnit name="MES-SISTEMA" size="2">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="MES-SISTEMA" type="//@model.1/@codeElement.0/@codeElement.14/@codeElement.0/@itemUnit.3/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.14/@codeElement.0/@itemUnit.2" from="//@model.1/@codeElement.0/@codeElement.14/@codeElement.0/@itemUnit.3"/>
+            <codeElement xsi:type="code:RecordType" name="MES-SISTEMA">
+              <itemUnit name="MES-SISTEMA-N" size="2">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+          <itemUnit name="DIA-SISTEMA" size="2">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#ANNO-AUX" size="4" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.2"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="FECHA-AMD" size="8" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.2"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="FECHA-AMD" type="//@model.1/@codeElement.0/@codeElement.17/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.16" from="//@model.1/@codeElement.0/@codeElement.17"/>
+        <codeElement xsi:type="code:RecordType" name="FECHA-AMD">
+          <itemUnit name="ANNO-MES-AMD" size="6">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="ANNO-MES-AMD" type="//@model.1/@codeElement.0/@codeElement.17/@codeElement.0/@itemUnit.1/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.17/@codeElement.0/@itemUnit.0" from="//@model.1/@codeElement.0/@codeElement.17/@codeElement.0/@itemUnit.1"/>
+            <codeElement xsi:type="code:RecordType" name="ANNO-MES-AMD">
+              <itemUnit name="ANNO-AMD" size="4">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+              <itemUnit name="MES-AMD" size="2">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+          <itemUnit name="DIA-AMD" size="2">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#DATE-AUX" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.9"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#FEC-ALFA" size="8" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#FEC-ALFA" type="//@model.1/@codeElement.0/@codeElement.20/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.19" from="//@model.1/@codeElement.0/@codeElement.20"/>
+        <codeElement xsi:type="code:RecordType" name="#FEC-ALFA">
+          <itemUnit name="#A#O-ALFA" size="4">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#A#O-ALFA" type="//@model.1/@codeElement.0/@codeElement.20/@codeElement.0/@itemUnit.1/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.20/@codeElement.0/@itemUnit.0" from="//@model.1/@codeElement.0/@codeElement.20/@codeElement.0/@itemUnit.1"/>
+            <codeElement xsi:type="code:RecordType" name="#A#O-ALFA">
+              <itemUnit name="#A#O-ALFA-N" size="4">
+                <type href="lu/natural.kdm#//@codeElement.2"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+          <itemUnit name="#MES-ALFA" size="2">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#DIA-ALFA" size="2">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#HSRKSP2" size="26" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#HSRKSP2" type="//@model.1/@codeElement.0/@codeElement.22/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.21" from="//@model.1/@codeElement.0/@codeElement.22"/>
+        <codeElement xsi:type="code:RecordType" name="#HSRKSP2">
+          <itemUnit name="#HSRK-SP2" size="13">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+          <itemUnit name="#HSRA#O-EMI-SP2" size="4">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+          <itemUnit name="#HSRSULSIT-SP2" size="1">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+          <itemUnit name="#HSRFPR-SP2" size="8">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#FECHA-AUX" size="8" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.2"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#FECHA-AUX" type="//@model.1/@codeElement.0/@codeElement.24/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.23" from="//@model.1/@codeElement.0/@codeElement.24"/>
+        <codeElement xsi:type="code:RecordType" name="#FECHA-AUX">
+          <itemUnit name="#A#O-AUX" size="4">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+          <itemUnit name="#MES-AUX" size="2">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+          <itemUnit name="#DIA-AUX" size="2">
+            <type href="lu/natural.kdm#//@codeElement.2"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#EXPEDIENTE-AUX" size="21" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="#EXPEDIENTE-AUX" type="//@model.1/@codeElement.0/@codeElement.26/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.25" from="//@model.1/@codeElement.0/@codeElement.26"/>
+        <codeElement xsi:type="code:RecordType" name="#EXPEDIENTE-AUX">
+          <itemUnit name="#PAR1-EXPEDIENTE" size="7">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#TIPO-EXPEDIENTE" size="1">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="#PAR2-EXPEDIENTE" size="13">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="TABLA-NIF" type="//@model.1/@codeElement.0/@codeElement.27/@codeElement.0" kind="local">
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.2" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.3" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.4" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.5" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.6" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.7" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.8" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.9" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.10" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.11" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.12" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.13" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.14" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.15" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.16" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.17" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.18" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.19" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.20" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.21" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeRelation xsi:type="code:HasValue" to="//@model.2/@codeElement.22" from="//@model.1/@codeElement.0/@codeElement.27"/>
+        <codeElement xsi:type="code:ArrayType" size="1">
+          <attribute tag="dimension" value="1:23"/>
+          <itemUnit size="1">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <indexUnit>
+            <type href="lu/natural.kdm#//@codeElement.4"/>
+          </indexUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="PARAMETRO" size="50" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="PARAMETRO" type="//@model.1/@codeElement.0/@codeElement.29/@codeElement.0" ext="REDEFINITION" kind="unknown">
+        <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.28" from="//@model.1/@codeElement.0/@codeElement.29"/>
+        <codeElement xsi:type="code:RecordType" name="PARAMETRO">
+          <itemUnit name="TIPO-PARAMETRO" size="1">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="RESTO-PARAMETRO" size="49">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="RESTO-PARAMETRO" type="//@model.1/@codeElement.0/@codeElement.29/@codeElement.0/@itemUnit.2/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.29/@codeElement.0/@itemUnit.1" from="//@model.1/@codeElement.0/@codeElement.29/@codeElement.0/@itemUnit.2"/>
+            <codeElement xsi:type="code:RecordType" name="RESTO-PARAMETRO">
+              <itemUnit name="ID-TITULAR-1" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="SEPARADOR-1" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="ID-TITULAR-2" size="10">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="RESTO-PARAM-1" size="37">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+          <itemUnit name="RESTO-PARAMETRO" type="//@model.1/@codeElement.0/@codeElement.29/@codeElement.0/@itemUnit.3/@codeElement.0" ext="REDEFINITION">
+            <codeRelation xsi:type="code:CodeRelationship" to="//@model.1/@codeElement.0/@codeElement.29/@codeElement.0/@itemUnit.1" from="//@model.1/@codeElement.0/@codeElement.29/@codeElement.0/@itemUnit.3"/>
+            <codeElement xsi:type="code:RecordType" name="RESTO-PARAMETRO">
+              <itemUnit name="PAR-ENT-GES" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="SEPARADOR-2" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="PAR-DIR-PROV" size="2">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="SEPARADOR-3" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="PAR-ANNO" size="4">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="SEPARADOR-4" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="PAR-TIPO" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="SEPARADOR-5" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="PAR-NUM-ORDEN" size="9">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="SEPARADOR-6" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="PAR-DUPLIC" size="2">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="SEPARADOR-7" size="1">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="PAR-DESDOBL" size="2">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+              <itemUnit name="RESTO-PARAM-2" size="22">
+                <type href="lu/natural.kdm#//@codeElement.6"/>
+              </itemUnit>
+            </codeElement>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.1" name="ECNATRN1" type="//@model.1/@codeElement.0/@codeElement.30/@codeElement.0" kind="unknown">
+        <codeElement xsi:type="code:RecordType" name="ECNATRN1">
+          <itemUnit name="TEXTO" size="40">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+          <itemUnit name="CODIGO" size="5">
+            <type href="lu/natural.kdm#//@codeElement.6"/>
+          </itemUnit>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.2" name="+DBID" size="3" kind="local">
+        <type href="lu/natural.kdm#//@codeElement.6"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.3" name="*DATA" ext="unknown definition '*DATA'" kind="unknown"/>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.3" name="GLOBAL-BP" type="//@model.1/@codeElement.0/@codeElement.33/@codeElement.0" ext="unknown definition 'GLOBAL-BP'" kind="unknown">
+        <codeElement xsi:type="code:RecordType" name="GLOBAL-BP">
+          <itemUnit stereotype="//@extension.0/@stereotype.4" name="GLOBAL-BP.G-EXPEDIENTE" ext="unknown definition 'GLOBAL-BP.G-EXPEDIENTE'"/>
+        </codeElement>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.3" name="*USER" ext="unknown definition '*USER'" kind="unknown"/>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.3" name="GEOK" ext="unknown definition 'GEOK'" kind="unknown"/>
+      <codeElement xsi:type="code:CallableUnit" stereotype="//@extension.0/@stereotype.3" name="LLAMAR-MODULO" type="//@model.1/@codeElement.0/@codeElement.36/@codeElement.0" kind="unknown">
+        <codeElement xsi:type="code:Signature"/>
+        <codeElement xsi:type="action:ActionElement" name="Nop" kind="Nop"/>
+      </codeElement>
+      <codeElement xsi:type="code:StorableUnit" stereotype="//@extension.0/@stereotype.3" name="G-ERROR" ext="unknown definition 'G-ERROR'" kind="unknown"/>
+      <codeElement xsi:type="action:ActionElement" name="TODO:70f81b4a-44cb-4825-a76a-24745c0ba90d statement" kind="statement">
+        <source snippet="FORMAT LS=250">
+          <region startLine="211"/>
+        </source>
+      </codeElement>
+      <codeElement xsi:type="action:ActionElement" name="TODO:e7731caf-b894-46e0-bc3b-3ff60a135c22 statement" kind="statement">
+        <source snippet="MOVE *PROGRAM TO #PROGRAMA SILCON-E">
+          <region startLine="213"/>
+        </source>
+      </codeElement>
+      <codeElement xsi:type="action:ActionElement" name="TODO:b4d41977-f17c-42ea-8c75-4a6a973a91c6 statement" kind="statement">
+        <source snippet="MOVE *DATN TO FECHA-ALFA">
+          <region startLine="214"/>
+        </source>
+      </codeElement>
+      <codeElement xsi:type="action:ActionElement" name="TODO:238496f5-b4c8-469c-806d-0aaf67e3865a statement" kind="statement">
+        <source snippet="SET KEY PF1 PF2 PF3 PF4 PF5 PF6 PF7 PF8 PF9 PF10 PF11 PF12">
+          <region startLine="216"/>
+        </source>
+      </codeElement>
+      <codeElement xsi:type="action:ActionElement" name="IF" kind="statement">
+        <source snippet="IF *DATA LE 0 ~/* Viene del subsistema ~&#xA;0219 MOVE G-ID-TIT-B TO MAPA-PHNMALIA.#IPF&#xA;0220 IF GLOBAL-BP.G-EXPEDIENTE NE 0&#xA;0221 MOVE GLOBAL-BP.G-EXPEDIENTE TO MAPA-PHNMALIA.#EXPEDIENTE&#xA;0222 IF (*USER = '99GU0443' OR = '99GU7390' OR = '99GU6012' OR&#xA;0223 = 'IDUSB118' OR&#xA;0224 = '99GU2341' OR = '99GU1865' OR = '99IU0669')&#xA;0225 OR *USER = MASK (:mask?'IDUS'....~)&#xA;0226 CALLNAT 'PBPNTER0' GEOK&#xA;0227 END-IF&#xA;0228 PERFORM LLAMAR-MODULO&#xA;0229 ELSE&#xA;0230 IF G-ERROR NE 0&#xA;0231 MOVE G-ERROR TO #ERROR&#xA;0232 RESET G-ERROR&#xA;0233 END-IF&#xA;0234 END-IF&#xA;0235 END-IF">
+          <region startLine="218"/>
+        </source>
+        <codeElement xsi:type="action:ActionElement" name="parenthesised expression" kind="parenthesised expression">
+          <taggedValue xsi:type="kdm:TaggedValue" value="condition"/>
+          <codeElement xsi:type="action:ActionElement" name="LE logical comparison expression" kind="LE logical comparison expression">
+            <actionRelation xsi:type="action:Reads" to="//@model.1/@codeElement.0/@codeElement.32" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.0/@codeElement.0"/>
+            <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.23" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.0/@codeElement.0"/>
+          </codeElement>
+          <actionRelation xsi:type="action:TrueFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.0"/>
+          <actionRelation xsi:type="action:FalseFlow" to="//@model.1/@codeElement.0/@codeElement.43" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.0"/>
+        </codeElement>
+        <codeElement xsi:type="action:BlockUnit" entryFlow="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@actionRelation.0">
+          <codeElement xsi:type="action:ActionElement" name="TODO:cb4046e5-fde0-4640-8b9c-801d5957fb1c statement" kind="statement">
+            <source snippet="MOVE G-ID-TIT-B TO MAPA-PHNMALIA.#IPF">
+              <region startLine="219"/>
+            </source>
+            <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.0"/>
+          </codeElement>
+          <codeElement xsi:type="action:ActionElement" name="IF" kind="statement">
+            <source snippet="IF GLOBAL-BP.G-EXPEDIENTE NE 0&#xA;0221 MOVE GLOBAL-BP.G-EXPEDIENTE TO MAPA-PHNMALIA.#EXPEDIENTE&#xA;0222 IF (*USER = '99GU0443' OR = '99GU7390' OR = '99GU6012' OR&#xA;0223 = 'IDUSB118' OR&#xA;0224 = '99GU2341' OR = '99GU1865' OR = '99IU0669')&#xA;0225 OR *USER = MASK (:mask?'IDUS'....~)&#xA;0226 CALLNAT 'PBPNTER0' GEOK&#xA;0227 END-IF&#xA;0228 PERFORM LLAMAR-MODULO&#xA;0229 ELSE&#xA;0230 IF G-ERROR NE 0&#xA;0231 MOVE G-ERROR TO #ERROR&#xA;0232 RESET G-ERROR&#xA;0233 END-IF&#xA;0234 END-IF">
+              <region startLine="220"/>
+            </source>
+            <codeElement xsi:type="action:ActionElement" name="parenthesised expression" kind="parenthesised expression">
+              <taggedValue xsi:type="kdm:TaggedValue" value="condition"/>
+              <codeElement xsi:type="action:ActionElement" name="NE logical comparison expression" kind="NE logical comparison expression">
+                <actionRelation xsi:type="action:Reads" to="//@model.1/@codeElement.0/@codeElement.33/@codeElement.0/@itemUnit.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0"/>
+                <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.23" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0"/>
+              </codeElement>
+              <actionRelation xsi:type="action:TrueFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.0"/>
+              <actionRelation xsi:type="action:FalseFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.0"/>
+            </codeElement>
+            <codeElement xsi:type="action:BlockUnit" entryFlow="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@actionRelation.0">
+              <codeElement xsi:type="action:ActionElement" name="TODO:d859ddbf-789e-48e9-8196-9a0546314638 statement" kind="statement">
+                <source snippet="MOVE GLOBAL-BP.G-EXPEDIENTE TO MAPA-PHNMALIA.#EXPEDIENTE">
+                  <region startLine="221"/>
+                </source>
+                <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0"/>
+              </codeElement>
+              <codeElement xsi:type="action:ActionElement" name="IF" kind="statement">
+                <source snippet="IF (*USER = '99GU0443' OR = '99GU7390' OR = '99GU6012' OR&#xA;0223 = 'IDUSB118' OR&#xA;0224 = '99GU2341' OR = '99GU1865' OR = '99IU0669')&#xA;0225 OR *USER = MASK (:mask?'IDUS'....~)&#xA;0226 CALLNAT 'PBPNTER0' GEOK&#xA;0227 END-IF">
+                  <region startLine="222"/>
+                </source>
+                <codeElement xsi:type="action:ActionElement" name="parenthesised expression" kind="parenthesised expression">
+                  <taggedValue xsi:type="kdm:TaggedValue" value="condition"/>
+                  <codeElement xsi:type="action:ActionElement" name="OR logical operator expression" kind="OR logical operator expression">
+                    <codeElement xsi:type="action:ActionElement" name="parenthesised logical expression" kind="parenthesised logical expression">
+                      <codeElement xsi:type="action:ActionElement" name="OR logical operator expression" kind="OR logical operator expression">
+                        <codeElement xsi:type="action:ActionElement" name="OR logical operator expression" kind="OR logical operator expression">
+                          <codeElement xsi:type="action:ActionElement" name="OR logical operator expression" kind="OR logical operator expression">
+                            <codeElement xsi:type="action:ActionElement" name="OR logical operator expression" kind="OR logical operator expression">
+                              <codeElement xsi:type="action:ActionElement" name="OR logical operator expression" kind="OR logical operator expression">
+                                <codeElement xsi:type="action:ActionElement" name="OR logical operator expression" kind="OR logical operator expression">
+                                  <codeElement xsi:type="action:ActionElement" name="= logical comparison expression" kind="= logical comparison expression">
+                                    <actionRelation xsi:type="action:Reads" to="//@model.1/@codeElement.0/@codeElement.34" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                                    <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.24" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                                  </codeElement>
+                                  <codeElement xsi:type="action:ActionElement" name="= logical comparison expression" kind="= logical comparison expression">
+                                    <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.25" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1"/>
+                                  </codeElement>
+                                  <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                                  <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                                </codeElement>
+                                <codeElement xsi:type="action:ActionElement" name="= logical comparison expression" kind="= logical comparison expression">
+                                  <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.26" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1"/>
+                                </codeElement>
+                                <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                                <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                              </codeElement>
+                              <codeElement xsi:type="action:ActionElement" name="= logical comparison expression" kind="= logical comparison expression">
+                                <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.27" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1"/>
+                              </codeElement>
+                              <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                              <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                            </codeElement>
+                            <codeElement xsi:type="action:ActionElement" name="= logical comparison expression" kind="= logical comparison expression">
+                              <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.28" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1"/>
+                            </codeElement>
+                            <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                            <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                          </codeElement>
+                          <codeElement xsi:type="action:ActionElement" name="= logical comparison expression" kind="= logical comparison expression">
+                            <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.29" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1"/>
+                          </codeElement>
+                          <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                          <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                        </codeElement>
+                        <codeElement xsi:type="action:ActionElement" name="= logical comparison expression" kind="= logical comparison expression">
+                          <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.30" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1"/>
+                        </codeElement>
+                        <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                        <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                      </codeElement>
+                      <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                    </codeElement>
+                    <codeElement xsi:type="action:ActionElement" name="= logical comparison expression" kind="= logical comparison expression">
+                      <codeElement xsi:type="action:ActionElement" name="MASK expression" kind="MASK expression">
+                        <source snippet="mask='IDUS'...."/>
+                      </codeElement>
+                      <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.1/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.1"/>
+                      <actionRelation xsi:type="action:Reads" to="//@model.1/@codeElement.0/@codeElement.34" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.1"/>
+                    </codeElement>
+                    <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0"/>
+                    <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0"/>
+                  </codeElement>
+                  <actionRelation xsi:type="action:TrueFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0"/>
+                  <actionRelation xsi:type="action:FalseFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.2" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0"/>
+                </codeElement>
+                <codeElement xsi:type="action:BlockUnit" entryFlow="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@actionRelation.0">
+                  <codeElement xsi:type="action:ActionElement" stereotype="//@extension.0/@stereotype.5" name="CALLNAT" kind="statement">
+                    <attribute tag="invoked" value="PBPNTER0"/>
+                    <source snippet="CALLNAT 'PBPNTER0' GEOK">
+                      <region startLine="226"/>
+                    </source>
+                    <codeElement xsi:type="action:ActionElement" name="arguments" kind="arguments">
+                      <actionRelation xsi:type="action:Reads" to="//@model.1/@codeElement.0/@codeElement.35" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0/@codeElement.0"/>
+                    </codeElement>
+                    <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.31" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0">
+                      <taggedValue xsi:type="kdm:TaggedValue" value="invoked"/>
+                    </actionRelation>
+                  </codeElement>
+                  <actionRelation xsi:type="action:EntryFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1"/>
+                </codeElement>
+                <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.1"/>
+              </codeElement>
+              <codeElement xsi:type="action:ActionElement" name="PERFORM" kind="statement">
+                <attribute tag="invoked" value="LLAMAR-MODULO"/>
+                <taggedValue xsi:type="kdm:TaggedValue" value="invoked"/>
+                <source snippet="PERFORM LLAMAR-MODULO">
+                  <region startLine="228"/>
+                </source>
+                <codeElement xsi:type="action:ActionElement" name="arguments" kind="arguments"/>
+                <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.2"/>
+                <actionRelation xsi:type="action:Calls" to="//@model.1/@codeElement.0/@codeElement.36" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.2"/>
+                <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.36/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.2"/>
+              </codeElement>
+              <actionRelation xsi:type="action:EntryFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.1"/>
+            </codeElement>
+            <codeElement xsi:type="action:BlockUnit" entryFlow="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@actionRelation.0">
+              <codeElement xsi:type="action:ActionElement" name="IF" kind="statement">
+                <source snippet="IF G-ERROR NE 0&#xA;0231 MOVE G-ERROR TO #ERROR&#xA;0232 RESET G-ERROR&#xA;0233 END-IF">
+                  <region startLine="230"/>
+                </source>
+                <codeElement xsi:type="action:ActionElement" name="parenthesised expression" kind="parenthesised expression">
+                  <taggedValue xsi:type="kdm:TaggedValue" value="condition"/>
+                  <codeElement xsi:type="action:ActionElement" name="NE logical comparison expression" kind="NE logical comparison expression">
+                    <actionRelation xsi:type="action:Reads" to="//@model.1/@codeElement.0/@codeElement.37" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                    <actionRelation xsi:type="action:Reads" to="//@model.2/@codeElement.23" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.0/@codeElement.0"/>
+                  </codeElement>
+                  <actionRelation xsi:type="action:TrueFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.0"/>
+                  <actionRelation xsi:type="action:FalseFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.0"/>
+                </codeElement>
+                <codeElement xsi:type="action:BlockUnit" entryFlow="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.1/@actionRelation.0">
+                  <codeElement xsi:type="action:ActionElement" name="TODO:b4f9746e-1991-465c-bce8-b3cc333fa20f statement" kind="statement">
+                    <source snippet="MOVE G-ERROR TO #ERROR">
+                      <region startLine="231"/>
+                    </source>
+                    <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.1/@codeElement.1" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.1/@codeElement.0"/>
+                  </codeElement>
+                  <codeElement xsi:type="action:ActionElement" name="TODO:c9118fdd-a320-4d6e-a50c-03304635d005 statement" kind="statement">
+                    <source snippet="RESET G-ERROR">
+                      <region startLine="232"/>
+                    </source>
+                  </codeElement>
+                  <actionRelation xsi:type="action:EntryFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.1/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.1"/>
+                </codeElement>
+                <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0"/>
+              </codeElement>
+              <codeElement xsi:type="action:ActionElement" name="Nop" kind="Nop"/>
+              <actionRelation xsi:type="action:EntryFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.2"/>
+            </codeElement>
+            <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.1"/>
+          </codeElement>
+          <actionRelation xsi:type="action:EntryFlow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42/@codeElement.1"/>
+        </codeElement>
+        <actionRelation xsi:type="action:Flow" to="//@model.1/@codeElement.0/@codeElement.42/@codeElement.0" from="//@model.1/@codeElement.0/@codeElement.42"/>
+      </codeElement>
+      <codeElement xsi:type="action:ActionElement" name="TODO:7e19fe1b-654a-42e8-9ecf-32e38580ce19 statement" kind="statement">
+        <source snippet="END">
+          <region startLine="237"/>
+        </source>
+      </codeElement>
+    </codeElement>
+  </model>
+  <model xsi:type="code:CodeModel" name="externals">
+    <codeElement xsi:type="code:Value" name="T" ext="T" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="R" ext="R" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="W" ext="W" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="A" ext="A" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="G" ext="G" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="M" ext="M" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="Y" ext="Y" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="F" ext="F" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="P" ext="P" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="D" ext="D" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="X" ext="X" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="B" ext="B" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="N" ext="N" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="J" ext="J" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="Z" ext="Z" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="S" ext="S" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="Q" ext="Q" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="V" ext="V" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="H" ext="H" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="L" ext="L" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="C" ext="C" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="K" ext="K" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="E" ext="E" size="1">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="0" ext="0" size="1">
+      <type href="lu/natural.kdm#//@codeElement.4"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="99GU0443" ext="'99GU0443'" size="10">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="99GU7390" ext="'99GU7390'" size="10">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="99GU6012" ext="'99GU6012'" size="10">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="IDUSB118" ext="'IDUSB118'" size="10">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="99GU2341" ext="'99GU2341'" size="10">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="99GU1865" ext="'99GU1865'" size="10">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="99IU0669" ext="'99IU0669'" size="10">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+    <codeElement xsi:type="code:Value" name="PBPNTER0" ext="'PBPNTER0'" size="10">
+      <type href="lu/natural.kdm#//@codeElement.6"/>
+    </codeElement>
+  </model>
+  <model xsi:type="data:DataModel" name="dataModel">
+    <dataElement xsi:type="data:DataSegment" name="LOPRSISU"/>
+    <dataElement xsi:type="data:DataSegment" name="AOPEFISU"/>
+  </model>
+  <model xsi:type="ui:UIModel" name="uiModel"/>
+</kdm:Segment>
